@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# FlyBondi
 
-## Getting Started
+This repository contains the source code of the FlyBondi website, developed as a solution to a coding challenge.
 
-First, run the development server:
+## Code Challenge
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Meet Nelsona, a 65-year-old who's not very fond of computers, but she heard that FlyBondi.com offers cheap flights, so she's willing to give it a try. Nelsona wants to go on vacation and has only $800 to spend on round-trip tickets. She's open to destinations, whether it's the mountains, the sea, warm weather, or cold. Nelsona wants to quickly and easily find out where she can go in Argentina and nearby areas for that budget, with minimal clicks. She's flexible on the travel dates and duration, but her main constraint is the budget, being a retiree. Nelsona might seek help from her granddaughter Valentina, who's 16 and tech-savvy, to assist her in choosing the best option. Depending on the travel date, Nelsona's son Victor, Valentina, and Adriana (her daughter-in-law) might accompany her.
+
+How would you help Nelsona have the best experience in planning her vacation?
+
+We'll be evaluating various aspects, with a primary focus on:
+
+💡 Creativity.
+🔧 Tools used.
+👨‍💻 Best practices of applied technology.
+
+The dataset with the necessary information for conducting searches has the following format:
+
+```json
+[
+  {
+    "origin": "String",
+    "destination": "String",
+    "price": "Float",
+    "availability": "Number",
+    "date": "String"
+  }
+]
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## About
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+FlyBondi is a flight booking platform designed to provide an attractive and user-friendly experience for users like Nelsona. With FlyBondi, users can easily search for flights based on their budget, destination preferences, and travel dates.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Features
 
-## Learn More
+- Utilizes React and Next.js for building dynamic web applications.
+- Implements Tailwind CSS for fast and responsive styling.
+- Integrates with an external API to fetch flight data.
+- Provides detailed flight information including origin, destination, price, availability, and duration (days).
 
-To learn more about Next.js, take a look at the following resources:
+## Usage
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To use FlyBondi locally:
+1. Clone the repository.
+2. Install dependencies with `npm install`.
+3. Start the development server with `npm run dev`.
+4. Open your web browser and navigate to `http://localhost:3000`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+To view FlyBondi live, visit [FlyBondi on Vercel](https://flybondi-zeta.vercel.app/).
 
-## Deploy on Vercel
+## File Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The repository consists of the following files and folders:
+- `app/`: Contains Next.js page components.
+- `api/`: Provides access to flight data through an external API.
+- `types/`: Contains the types for Flight and Trip objects.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Future Improvements
+
+- Add sorting flights by price, availability, and duration.
+
+## Final Notes
+
+I tried to implement a sorting feature by price, availability, etc. However I can't because it would require to use React hooks inside a page.tsx that waits an async function.
+We hope you enjoy using FlyBondi to plan your next adventure!
