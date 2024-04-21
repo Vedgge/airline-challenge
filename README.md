@@ -11,7 +11,9 @@ How would you help Nelsona have the best experience in planning her vacation?
 We'll be evaluating various aspects, with a primary focus on:
 
 💡 Creativity.
+
 🔧 Tools used.
+
 👨‍💻 Best practices of applied technology.
 
 The dataset with the necessary information for conducting searches has the following format:
@@ -63,4 +65,5 @@ The repository consists of the following files and folders:
 ## Final Notes
 
 I tried to implement a sorting feature by price, availability, etc. However I can't because it would require to use React hooks inside a page.tsx that waits an async function.
+
 We hope you enjoy using FlyBondi to plan your next adventure!
