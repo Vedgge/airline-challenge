@@ -16,7 +16,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+        <footer className="flex items-center justify-center text-white h-20">
+          With 💖 by Facundo
+        </footer>
+      </body>
     </html>
   );
 }
