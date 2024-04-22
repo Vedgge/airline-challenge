@@ -2,13 +2,13 @@ import Link from "next/link.js";
 import React from "react";
 import api from "../../../api/api";
 
-interface PageProps {
+interface OriginPageProps {
   params: {
     origin: string;
   };
 }
 
-export default async function OriginPage({ params }: PageProps) {
+export default async function OriginPage({ params }: OriginPageProps) {
   const { origin } = params;
   const trips = await api.tripsOrigin.list(params?.origin!);
   return (
