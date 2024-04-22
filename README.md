@@ -40,6 +40,8 @@ FlyBondi is a flight booking platform designed to provide an attractive and user
 - Implements Tailwind CSS for fast and responsive styling.
 - Integrates with an external API to fetch flight data.
 - Provides detailed flight information including origin, destination, price, availability, and duration (days).
+- Has a sorting flight feature by price, availability, and duration.
+- Utilizes pagination to navigate through all the available flights.
 
 ## Usage
 
@@ -57,11 +59,6 @@ The repository consists of the following files and folders:
 - `app/`: Contains Next.js page components.
 - `api/`: Provides access to flight data through an external API.
 - `types/`: Contains the types for Flight and Trip objects.
-
-## Future Improvements
-
-- Add sorting flights by price, availability, and duration.
-- Implement pagination.
 
 ## Final Notes
 
