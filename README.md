@@ -62,6 +62,4 @@ The repository consists of the following files and folders:
 
 ## Final Notes
 
-I attempted to incorporate pagination and sorting feature based on price, availability, and other factors. Unfortunately, I encountered a limitation. It seems that implementing this feature would necessitate using React hooks within a page.tsx file that awaits an async function.
-
 We hope you enjoy using FlyBondi to plan your next adventure!
