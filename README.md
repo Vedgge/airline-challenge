@@ -61,9 +61,10 @@ The repository consists of the following files and folders:
 ## Future Improvements
 
 - Add sorting flights by price, availability, and duration.
+- Implement pagination.
 
 ## Final Notes
 
-I tried to implement a sorting feature by price, availability, etc. However I can't because it would require to use React hooks inside a page.tsx that waits an async function.
+I attempted to incorporate pagination and sorting feature based on price, availability, and other factors. Unfortunately, I encountered a limitation. It seems that implementing this feature would necessitate using React hooks within a page.tsx file that awaits an async function.
 
 We hope you enjoy using FlyBondi to plan your next adventure!
