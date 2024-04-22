@@ -52,7 +52,7 @@ const api = {
       );
 
       const trips: Trip[] = [];
-      // Iteramos sobre todos los origins y todas las destinations y obtener un trip nuevo por cada permutacion que a nosotros nos interesa.
+      // Iteramos sobre todos los origins y todas las destinations y obtener un trip nuevo por cada permutacion que nos importa.
       for (const origin of origins) {
         for (const destination of destinations) {
           const originDate = new Date(origin.date);
