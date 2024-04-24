@@ -24,7 +24,7 @@ export default async function OriginPage({ params }: OriginPageProps) {
             {trips.map((trip) => (
               <Link
                 key={trip.origin}
-                href={`/${origin}/${trip.destination}`} // Assuming `trip.date` is a valid URL part
+                href={`/${origin}/${trip.destination}`}
                 className="flex w-full p-6 text-5xl font-bold transition-colors duration-200 border-2 border-white cursor-pointer rounded-3xl hover:border-yellow-400 hover:text-yellow-500"
               >
                 <h2>{`${trip.origin} ➡️ ${trip.destination} ✈️`}</h2>

@@ -42,15 +42,15 @@ export default function OriginDestinationClient({
           </button>
           <button
             className="duration-200 hover:text-yellow-300"
-            onClick={() => setSort("days")}
-          >
-            Sort by days 🔁
-          </button>
-          <button
-            className="duration-200 hover:text-yellow-300"
             onClick={() => setSort("availability")}
           >
             Sort by availability 📅
+          </button>
+          <button
+            className="duration-200 hover:text-yellow-300"
+            onClick={() => setSort("days")}
+          >
+            Sort by days 🔁
           </button>
         </div>
         <ul className="flex flex-col items-center w-full gap-8">
