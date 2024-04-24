@@ -40,6 +40,8 @@ FlyBondi is a flight booking platform designed to provide an attractive and user
 - Implements Tailwind CSS for fast and responsive styling.
 - Integrates with an external API to fetch flight data.
 - Provides detailed flight information including origin, destination, price, availability, and duration (days).
+- Has a sorting flight feature by price, availability, and duration.
+- Utilizes pagination to navigate through all the available flights.
 
 ## Usage
 
@@ -58,13 +60,6 @@ The repository consists of the following files and folders:
 - `api/`: Provides access to flight data through an external API.
 - `types/`: Contains the types for Flight and Trip objects.
 
-## Future Improvements
-
-- Add sorting flights by price, availability, and duration.
-- Implement pagination.
-
 ## Final Notes
-
-I attempted to incorporate pagination and sorting feature based on price, availability, and other factors. Unfortunately, I encountered a limitation. It seems that implementing this feature would necessitate using React hooks within a page.tsx file that awaits an async function.
 
 We hope you enjoy using FlyBondi to plan your next adventure!
